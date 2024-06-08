@@ -1,0 +1,153 @@
+/* Scroll container */
+.scrollContainer {
+  box-sizing: border-box;
+  overflow-y: scroll;
+  height: 100%;
+  padding-top: var(--ui-kit-space-2);
+  padding-right: var(--ui-kit-space-2);
+  padding-bottom: var(--ui-kit-space-2);
+
+  /* for firefox */
+  scrollbar-width: thin;
+  scrollbar-color: var(--ui-kit-color-typography-quaternary) transparent;
+}
+
+.scrollContainer::-webkit-scrollbar {
+  position: absolute;
+  width: var(--ui-kit-base-unit);
+  height: 0;
+}
+
+.scrollContainer::-webkit-scrollbar-track {
+  background: transparent;
+  width: var(--ui-kit-base-unit);
+  margin-top: var(--ui-kit-space-1);
+  margin-bottom: var(--ui-kit-space-1);
+}
+
+.scrollContainer::-webkit-scrollbar-thumb {
+  border-radius: var(--ui-kit-border-radius);
+  background: var(--ui-kit-color-typography-quaternary);
+  visibility: hidden;
+}
+
+.scrollContainer:hover::-webkit-scrollbar-thumb,
+.scrollContainer:focus::-webkit-scrollbar-thumb,
+.scrollContainer:focus-within::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+
+/* Custom Css */
+.tableDiv {
+  width: 100%;
+  border: 1px solid black;
+  background-color: #d9d9d9;
+}
+
+.table {
+  border: 2px solid #6e6e6e;
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.tr {
+  font-size: 2vmax;
+}
+
+.th {
+  border: 2px solid #6e6e6e;
+  color: black;
+}
+
+.wordsTd {
+  border: 2px solid #6e6e6e;
+  color: #747474;
+  font-weight: 600;
+  width: 70%;
+}
+
+.weightTd {
+  border: 2px solid #6e6e6e;
+  color: black;
+  font-weight: 600;
+  width: 30%;
+}
+
+.weightInput {
+  width: 40%;
+  color: black;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+.wordsInput {
+  width: 90%;
+  background-color: transparent;
+  color: #747474;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+.plusMinusIconDiv {
+  display: flex;
+  gap: 0.5vmax;
+}
+
+.plusMinusIcon {
+  cursor: pointer;
+}
+
+.textStyleDiv {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  gap: 6vmax 4vmax;
+}
+
+.textStyleBox {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.imageDiv {
+  display: flex;
+  width: 100%;
+  height: 25vh;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  aspect-ratio: 6/4;
+  border-radius: 5px;
+}
+
+.textStyleContaint {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  width: 100%;
+  font-size: 1.5vmax;
+}
+
+.description {
+  width: 100%;
+  font-size: 1.5vmax;
+}
+
+.loggedInInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vmax;
+}
