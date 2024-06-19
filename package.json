@@ -30,6 +30,7 @@
     "@canva/platform": "^1.0.1",
     "@canva/preview": "./sdk/preview",
     "@canva/user": "^1.0.0",
+    "@clerk/clerk-react": "^5.2.3",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-icons": "^5.2.0",
